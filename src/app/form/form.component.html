@@ -1,1 +1,37 @@
-<p>form works!</p>
+<div class="container-sm">
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="validationServer01" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="validationServer01" value="Nombre ApellidoP ApellidoM" required>
+            <div id="validationServer01Feedback" class="valid-feedback">
+                Nombre Aceptado
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp exampleInputEmail1Feedback" required>
+            <div id="exampleInputEmail1Feedback" class="invalid-feedback">
+                Por Favor Ingrese su Correo Electrónico
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationServer04" class="form-label">Dirigido a...</label>
+            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Seleccione una Opción</option>
+                <option>Contenidos</option>
+                <option>Publicidad</option>
+                <option>Sugerencias</option>
+                <option>Suscripciones Digitales</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <div class="input-group">
+                <span class="input-group-text">Mensaje</span>
+                <textarea class="form-control" aria-label="With textarea" required></textarea>
+            </div>
+        </div>
+        <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
