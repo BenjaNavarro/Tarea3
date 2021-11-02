@@ -1,4 +1,7 @@
-<div class="d-flex flex-row" *ngFor="let news in newlist">
-    <p>{{news.id}}</p>
-    <!-- <img src=news.FotoDir alt=""> -->
+<div class="container-sm p-2 bd-highlight">
+    <div *ngFor="let new of NewList" class="card d-inline-flex">
+        <img src="../../assets/imgs/{{new.picture}}" class="card-img-top rounded" alt="{{new.picture}}" id="newimg">
+        <h5 class="card-title">{{new.title}}</h5>
+        <p class="card-text">{{new.description}}</p>
+    </div>
 </div>
